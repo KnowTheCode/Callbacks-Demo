@@ -1,0 +1,39 @@
+{
+    "name" 			: "knowthecode/docx",
+    "description" 	: "Docx - Demo Site",
+    "type"          : "project",
+    "keywords" 		: ["wordpress", "wp", "plugin"],
+    "homepage" 		: "https://knowthecode.io",
+    "license" 		: "GPL-2.0+",
+    "authors": [
+        {
+            "name" 	: "hellofromTonya",
+            "email" : "hellofromtonya@knowthecode.io"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.0"
+    },
+    "require-dev": {
+        "raveren/kint" : "~1.0",
+        "filp/whoops": "~2.0"
+    },
+    "autoload" : {
+        "classmap": [],
+        "files": [
+            "src/support/exceptions.php",
+            "src/callback-demos/newsletter.php",
+            "src/callback-demos/permissions.php",
+            "src/callback-demos/reports.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "vendor-dir": "assets/vendor"
+    },
+    "minimum-stability": "dev"
+}
